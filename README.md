@@ -1,109 +1,70 @@
-# 🔐 Secure Enterprise Network Design
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
 
-## 📌 Project Overview
+<body>
 
-This project demonstrates a secure enterprise network designed and implemented using Cisco Packet Tracer.
-The goal is to apply cybersecurity principles such as segmentation, access control, and secure communication in a real-world simulation.
+<h1>Secure Enterprise Network Design</h1>
 
----
+<p>This project was implemented using Cisco Packet Tracer to design a secure enterprise network applying cybersecurity principles.</p>
 
-## 🏗️ Network Topology
+<hr>
 
-![Network Topology](images/topology.png)
+<h2>Project Overview</h2>
+<p>The goal of this project is to design a secure network using VLANs, ACLs, DHCP, SSH, and Port Security.</p>
 
-### 📝 Description:
+<hr>
 
-This is the full network design including:
+<h2>Network Topology</h2>
+<img src="topology.png" width="600">
+<p>Shows the full network including router, switch, PCs, and server.</p>
 
-* Router for inter-VLAN routing
-* Switch for internal connectivity
-* PCs representing different departments
-* Server for centralized services
+<hr>
 
-👉 This shows the overall structure of the secure network.
+<h2>VLAN Configuration</h2>
+<img src="VLANs.png" width="600">
+<p>Network is divided into HR, IT, Guest, and Server VLANs.</p>
 
----
+<hr>
 
-## 🧩 VLAN Configuration
+<h2>ACL Configuration</h2>
+<img src="ACL.png" width="600">
+<p>Guest network is blocked from accessing the server network.</p>
 
-![VLAN Configuration](images/VLANs.png)
+<hr>
 
-### 📝 Description:
+<h2>SSH Configuration</h2>
+<img src="SSH.png" width="600">
+<p>Secure remote access using SSH instead of Telnet.</p>
 
-The network is divided into four VLANs:
+<hr>
 
-* VLAN 10 → HR Department
-* VLAN 20 → IT Department
-* VLAN 30 → Guest Network
-* VLAN 40 → Server Network
+<h2>Ping Test Results</h2>
+<img src="testPing.png" width="600">
+<p>HR can access server, Guest is blocked.</p>
 
-👉 This ensures **network segmentation**, meaning each department is isolated for security.
+<hr>
 
----
+<h2>Security Principles Used</h2>
+<ul>
+    <li>Least Privilege</li>
+    <li>Network Segmentation</li>
+    <li>Access Control</li>
+    <li>Defense in Depth</li>
+    <li>Secure Communication</li>
+</ul>
 
-## ⚙️ Access Control List (ACL)
+<hr>
 
-![ACL Configuration](images/ACL.png)
+<h2>Tools Used</h2>
+<p>Cisco Packet Tracer</p>
 
-### 📝 Description:
+<hr>
 
-ACL rules were applied on the router to:
+<h2>Conclusion</h2>
+<p>This project demonstrates a secure enterprise network design using VLANs, ACLs, SSH, DHCP, and Port Security.</p>
 
-* Block Guest network from accessing the Server
-* Allow controlled communication between VLANs
-
-👉 This implements **Access Control Security**, preventing unauthorized access.
-
----
-
-## 🔐 Secure Remote Access (SSH)
-
-![SSH Login](images/SSH.png)
-
-### 📝 Description:
-
-SSH was configured on the router to:
-
-* Enable encrypted remote management
-* Replace insecure Telnet
-* Protect login credentials
-
-👉 This ensures **secure administrative access** to the router.
-
----
-
-## 🧪 Network Testing (Ping Results)
-
-![Ping Test](images/testPing.png)
-
-### 📝 Description:
-
-Testing was performed to verify network security:
-
-* HR → Server ✔️ (Allowed)
-* Guest → Server ❌ (Blocked by ACL)
-
-👉 This confirms that security rules are working correctly.
-
----
-
-## 🔐 Security Principles Applied
-
-* Least Privilege (users only access what they need)
-* Network Segmentation (VLAN separation)
-* Access Control (ACL restrictions)
-* Defense in Depth (multiple security layers)
-* Secure Communication (SSH encryption)
-
----
-
-## 🛠️ Tools Used
-
-* Cisco Packet Tracer
-
----
-
-## 📌 Conclusion
-
-This project demonstrates how a secure enterprise network can be designed using VLANs, ACLs, DHCP, SSH, and Port Security.
-It successfully applies cybersecurity principles in a practical simulation environment.
+</body>
+</html>
