@@ -26,7 +26,7 @@ This is the full network design including:
 
 ## 🧩 VLAN Configuration
 
-![VLAN Configuration](images/vlan.png)
+![VLAN Configuration](images/VLANs.png)
 
 ### 📝 Description:
 
@@ -43,7 +43,7 @@ The network is divided into four VLANs:
 
 ## ⚙️ Access Control List (ACL)
 
-![ACL Configuration](images/acl.png)
+![ACL Configuration](images/ACL.png)
 
 ### 📝 Description:
 
@@ -58,7 +58,7 @@ ACL rules were applied on the router to:
 
 ## 🔐 Secure Remote Access (SSH)
 
-![SSH Login](images/ssh.png)
+![SSH Login](images/SSH.png)
 
 ### 📝 Description:
 
@@ -74,7 +74,7 @@ SSH was configured on the router to:
 
 ## 🧪 Network Testing (Ping Results)
 
-![Ping Test](images/ping.png)
+![Ping Test](images/testPing.png)
 
 ### 📝 Description:
 
